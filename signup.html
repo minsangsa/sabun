@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="signup.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <div class="register-form">
+      <h2>회원가입</h2>
+      <form>
+        <div class="form-group">
+          <label for="id">아이디 <small>- 영문, 숫자 조합 6-20자</small></label>
+          <input type="text" id="id" name="id" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password"
+            >비밀번호 <small>- 영문, 숫자, 특수문자 조합 8-20자</small></label
+          >
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password"
+            >비밀번호 확인
+            <small>- 비밀번호와 같은 암호를 입력해주세요.</small></label
+          >
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name"
+            >이름
+            <small
+              >- 실명이 아닌 경우에 환전시 불이익을 받을 수 있습니다.(공백없이
+              한글만 입력)</small
+            ></label
+          >
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="bank"
+            >거래은행
+            <small
+              >- 본인 명의의 계좌번호를 입력하세요. 이름과 예금주가 다르면
+              환전되지 않습니다.</small
+            ></label
+          >
+          <select id="bank" name="bank">
+            <option value="">선택</option>
+            <option value="kb">국민은행</option>
+            <option value="sh">신한은행</option>
+            <option value="wr">우리은행</option>
+            <option value="hn">하나은행</option>
+            <option value="nh">농협은행</option>
+            <option value="ka">카카오뱅크</option>
+            <option value="ts">토스뱅크</option>
+            <option value="gu">기업은행</option>
+            <option value="kn">케이뱅크</option>
+            <option value="sm">새마을금고</option>
+            <option value="se">수협은행</option>
+            <option value="dg">대구은행</option>
+            <option value="bs">부산은행</option>
+            <option value="gj">광주은행</option>
+            <option value="jj">제주은행</option>
+            <option value="jb">전북은행</option>
+            <option value="gn">경남은행</option>
+            <option value="nd">농협단위</option>
+            <option value="sc">SC제일은행</option>
+            <option value="sy">신협</option>
+            <option value="sj">상호저축은행</option>
+            <option value="hs">한국씨티은행</option>
+            <option value="uc">우체국</option>
+            <option value="mg">모건스탠리은행</option>
+            <option value="hb">HSBC은행</option>
+            <option value="dc">도이치은행</option>
+            <option value="jp">제이피모간체이스은행</option>
+            <option value="mh">미즈호은행</option>
+            <option value="nh">엠유에프지은행</option>
+            <option value="ba">BOA은행</option>
+            <option value="bp">비엔피파리바은행</option>
+            <option value="js">중국공상은행</option>
+            <option value="jg">중국은행</option>
+            <option value="sr">산림조합중앙회</option>
+            <option value="dh">대화은행</option>
+            <option value="gt">교통은행</option>
+            <option value="su">산업은행</option>
+            <option value="ju">중국건설은행</option>
+            <option value="ua">유안타증권</option>
+            <option value="kj">KB증권</option>
+            <option value="ss">상상인증권</option>
+            <option value="hy">한양증권</option>
+            <option value="ma">미래에셋증권</option>
+            <option value="ku">키움증권</option>
+            <option value="tj">토스증권</option>
+            <option value="kp">카카오페이증권</option>
+            <option value="sg">신영증권</option>
+            <option value="other">기타 은행</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="account-number"
+            >계좌번호 <small>- 숫자만 입력해주세요.</small></label
+          >
+          <input
+            type="text"
+            id="account-number"
+            name="account-number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nickname"
+            >별명
+            <small>- 공백없이 영문, 한글, 숫자만 입력해주세요.</small></label
+          >
+          <input type="text" id="nickname" name="nickname" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone"
+            >핸드폰번호
+            <small
+              >- 숫자만 입력해주세요. 비밀번호 및 정보 초기화에 필요하므로 본인
+              휴대폰번호를 기재해 주세요.</small
+            ></label
+          >
+          <input type="text" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="referral-code">추천코드</label
+          ><small
+            >- 가입코드가 없으시면 00 을/를 입력하시고 이용해주시면
+            감사하겠습니다.</small
+          >
+          <input type="text" id="referral-code" name="referral-code" />
+        </div>
+
+        <button type="submit">회원가입</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+
+body {
+  background-color: #000000;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: greenyellow;
+  border: 10px;
+}
+
+.sabun_bg {
+  background-image: url("");
+  width: auto;
+  height: 300px;
+}
+
+.header {
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  height: 86px;
+  color: #fff;
+}
+
+.sabunbet {
+  width: 300px;
+  color: #fff;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 75px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-weight: 1000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow: -1px 0px cyan, 0px 1px darkcyan, 1px 0px cyan, 0px -1px darkcyan;
+}
+
+.sign {
+  top: 10px;
+  right: 300px;
+  position: absolute;
+  border: 10px;
+  -webkit-text-stroke-color: greenyellow;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.signup {
+  top: 10px;
+  right: 200px;
+  position: absolute;
+  border: 10px;
+  -webkit-text-stroke-color: greenyellow;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 200px;
+  width: calc(1280px - 300px);
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.nav li {
+  margin-left: 84px;
+}
+.nav li a {
+  color: white;
+}
+
+li {
+  display: list-item;
+  unicode-bidi: isolate;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
