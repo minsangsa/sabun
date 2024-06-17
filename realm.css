@@ -114,98 +114,49 @@ a:-webkit-any-link {
 }
 
 .container {
-  width: 1000px;
-  margin: 50px auto;
-  border: 5px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.eader {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-.eader .title {
-  font-size: 1.5em;
-  color: cyan;
-}
-
-.eader .charge {
-  font-size: 0.8em;
-  color: gray;
-  margin-bottom: 5px;
-  padding-top: 15px;
-  padding-left: 5px;
-}
-
-.section {
-  margin-bottom: 20px;
-  border: 10px;
-}
-
-.section-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-  background-color: #5c5c5c;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.sub-section {
-  border: 1px solid #000000;
-  padding: 10px;
-  border-radius: 1x;
-  background-color: #292828;
-  margin-top: 10px;
-  padding-top: 10px;
-}
-
-.input-group {
-  margin-bottom: 10px;
-  color: black;
-}
-
-.input-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.input-group input[type="text"] {
-  width: calc(100% - 20px);
-  padding: 5px;
-  border: 1px solid #f1f1f1;
-  border-radius: 1px;
-  background-color: black;
+.border-box {
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  padding: 5px 30px;
+  width: 30%;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin: 10px 0;
+  height: 500px;
+  box-sizing: border-box; /* 테두리와 패딩을 포함한 크기 */
 }
 
-.btn-group {
-  display: flex;
-  gap: 10px;
+.border-box h3 {
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-.btn-group button {
-  flex: 1;
-  padding: 5px;
-  border: 1px solid #4e4e4e;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  background-color: #5c5c5c;
+.border-box ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.submit-btn {
-  display: block;
-  width: 100%;
+.border-box li {
+  margin-bottom: 15px;
   padding: 10px;
-  background-color: #87ceeb;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.border-box a {
+  color: cyan;
+  text-decoration: none;
 }

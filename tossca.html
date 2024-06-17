@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="tossca.css" />
+    <title>사번카지노</title>
+  </head>
+  <body>
+    <div class="background-gray">
+      <div class="container">
+        <div class="header">
+          <div class="menu-header">
+            <div class="con-menu">
+              <div class="menu-link">
+                <a href="#" class="login-modal">고객센터</a>
+              </div>
+              <div class="menu-link">
+                <a href="#" class="login-modal">
+                  " 쪽지 : "
+                  <strong id="i_rank" name="i_rank"></strong>
+                  " 통"
+                </a>
+              </div>
+              <div class="menu-link">
+                <a href="#" class="login-modal">포인트전환</a>
+              </div>
+              <div class="con-menu" id="display-nologin">
+                <!--div class="topbtn-arr">
+                                <button type="button" class="login-modal fadeIn fourth" value="LOGIN" border="0">로그인</button>
+                                <a class="fadeIn fourth loginjoin" href="info.asp">회원가입</a>
+                                </div -->
+              </div>
+              <div class="con-menu" id="display-nologin">
+                <div class="menu-button1">
+                  <a href="#" class="login-modal"> 로그인 </a>
+                </div>
+                <div class="menu-button" id="openJoin">
+                  <a href="info.asp"> 회원가입 </a>
+                </div>
+                <!-- a href="#"><div class="menu-button yellow"><img src="/html/tossca/img/incon-menu-1003.png"> 카톡문의ㅡ</div></a -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="navbar">
+            <a href="/logout.asp">
+              <div class="logo">
+                <img src="/html/tossca/images/logo.png?113" />
+              </div>
+            </a>
+            <div class="menu-navber">
+              <ul class="menu-nav-links">
+                <li class="nav-links hvr-pulse">
+                  <a href="#" class="login-modal">홈</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="/lobby.asp?view=casino">카지노</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="/lobby.asp?view=slot">슬롯</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="#" class="login-modal">공지사항</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="#" class="login-modal">이벤트</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="#" class="login-modal">충전</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="#" class="login-modal">환전</a>
+                </li>
+                <li class="nav-links hvr-pulse">
+                  <a href="#">고객센터</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub_content_arr_bg">
+        <script language="JavaScript" type="text/javascript">
+          $(document).ready(function () {
+            $(".login-modal").click(function () {
+              $(".modal").fadeIn();
+            });
+
+            $(".modal-close").click(function () {
+              $(".modal").fadeOut();
+            });
+          });
+        </script>
+        <div class="modal">
+          <div class="modal_content">
+            <i class="icofont icofont-close-line modal-close"></i>
+            <form
+              id="frm"
+              name="frm"
+              method="post"
+              action="/login.asp"
+              class="Ig_frm_arr"
+            >
+              <img src="/html/tossca/images/logo.png?33" class="frm-logo" />
+              <h4>로그인</h4>
+              <input
+                name="userid"
+                type="text"
+                id="userid"
+                class="fadeIn second"
+                size="15"
+                maxlength="20"
+                style="ime-mode: disabled"
+                placeholder="아이디"
+              />
+              <input
+                name="passwd"
+                type="password"
+                id="passwd"
+                class="fadeIn third"
+                size="15"
+                maxlength="20"
+                placeholder="비밀번호"
+              />
+              <button
+                id="login-btn"
+                type="submit"
+                class="fadeIn fourth"
+                value="LOGIN"
+                border="0"
+              >
+                로그인
+              </button>
+              <a id="join-btn" class="fadeIn fourth" href="info.asp"
+                >회원가입</a
+              >
+              <div class="msnssbner">
+                <a href="////t.me/sbb114" target="_blank">
+                  <img
+                    src="//i.ibb.co/x8VX6Zj/500x120.png"
+                    alt="500x120"
+                    border="0"
+                  />
+                </a>
+              </div>
+            </form>
+            <form
+              name="securedfrm"
+              id="securedfrm"
+              method="post"
+              action="/login.asp"
+            >
+              <input type="hidden" name="mode" id="mode" />
+              <input
+                type="hidden"
+                id="securedid"
+                name="securedid"
+                <input
+                type="hidden"
+                id="securedpasswd"
+                name="securedpasswd"
+              />
+            </form>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $("#slider").nivoSlider({
+              effect: "random",
+              slices: 15,
+              animSpeed: 500,
+              pauseTime: 3000,
+              directionNav: true,
+              controlNav: true,
+              keyboardNav: true,
+            });
+          });
+        </script>
+        <div class="container-slider">
+          <!----------메인 이미지---------->
+        </div>
+        <div class="con-notice-marquee">
+          <div class="container">
+            <div class="notice-marquee">
+              <div class="icon-marquee">
+                <!-- img src="/html/tossca/img/megaphone.png" -->
+              </div>
+              <div class="marquee-caption noticeText">
+                <marquee behavior="scroll" direction="left"></marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="con-info-group">
+            <div class="bg-info-group block bounceInLeft animated">
+              <div class="info-title">실시간 출금 현황</div>
+              <div class="list-info-group">
+                <ul
+                  id="vertical-ticker"
+                  class="vertical-ticker-ar"
+                  style="height: 520px; overflow: hidden"
+                >
+                  <li style="margin-top: 0px">
+                    <div class="rows-info hvr-wobble-vertical"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-info-group block bounceInLeft animated">
+              <div class="info-title">주간 출금 top 10</div>
+              <div class="list-info-group">
+                <ul
+                  id="vertical-ticker2"
+                  class="vertical-ticker-ar"
+                  style="height: 520px; overflow: hidden"
+                >
+                  <li style="margin-top: 0px">
+                    <div class="rows-info hvr-wobble-vertical"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-info-group bounceInRight animated">
+              <div class="info-title">EVENT</div>
+              <div class="list-info-group-text">
+                <div class="rows-info-text">
+                  <a href="#">
+                    <div style="text-align: center">
+                      <font color="#FFFF48"> ★ </font>
+                      " 신규가입 첫 충전 이벤트 "
+                      <font color="#FFFF48"> ★ </font>
+                    </div>
+                  </a>
+                </div>
+                <div class="rows-info-text">
+                  <a href="#">
+                    <div style="text-align: center">
+                      <font color="#FFFF48"> ★ </font>
+                      " 지인추천이벤트 "
+                      <font color="#FFFF48"> ★ </font>
+                    </div>
+                  </a>
+                </div>
+                <div class="rows-info-text">
+                  <a href="#">
+                    <div style="text-align: center">
+                      <font color="#FFFF48"> ★ </font>
+                      " 충전왕이벤트 "
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="con-info-telegram bounceInRight animated">
+              <div class="bg-info-group">
+                <div class="info-title">공지사항</div>
+                <div class="list-info-group-text">
+                  <div class="rows-info-text">
+                    <a href="#">
+                      <div style="text-align: center;">
+                        <font color="#FFFF48"> ★ </font>
+                        <font style="color: #FFFFFF;">등급별 등업조건 및 레벨 안내</font>
+                        <font color="#FFFF48"> ★ </font>
+                      </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
